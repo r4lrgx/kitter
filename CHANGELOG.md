@@ -21,6 +21,38 @@
 
 ---
 
+### [Version&nbsp;`1.0.1`](https://github.com/r4lrgx/kitter/compare/v1.0.0...v1.0.1)
+🗓️ **Released:** `2025-09-21`
+
+#### 📝 Documentation
+
+image solution in documentation files.
+image solution in documentation files.
+
+
+<br/>
+
+[<img width="32" height="32" title="r4lrgx" src="https://avatars.githubusercontent.com/u/153697070?v=4" />](https://github.com/r4lrgx)
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Docs updates and improvements
+
+* Image solution in documentation files ([50bc952](https://github.com/r4lrgx/kitter/commit/50bc952)) - by: [<img width="16" height="16" src="https://avatars.githubusercontent.com/u/153697070?v=4" /> **r4lrgx**](https://github.com/r4lrgx)
+
+* Image solution in documentation files ([c533c0c](https://github.com/r4lrgx/kitter/commit/c533c0c)) - by: [<img width="16" height="16" src="https://avatars.githubusercontent.com/u/153697070?v=4" /> **r4lrgx**](https://github.com/r4lrgx)
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ## Version&nbsp;`1.0.0`
 🗓️ **Released:** `2025-09-21`
 
