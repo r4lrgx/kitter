@@ -1,0 +1,58 @@
+name: Publish
+
+on:
+ workflow_run:
+  workflows: ['Release']
+  types: [completed]
+
+jobs:
+ publish-packages:
+  name: Publish packages
+  runs-on: ubuntu-latest
+  permissions:
+   packages: write
+   id-token: write
+   contents: read
+  strategy:
+   fail-fast: false
+   matrix:
+    node: ['lts/*']
+  steps:
+   - name: 📥 Checkout code
+     uses: actions/checkout@v5
+   - name: 📦 Setup PNPM
+     uses: pnpm/action-setup@v4
+     with:
+      standalone: true
+   - name: 📦 Setup Node.js ${{ matrix.node }}
+     uses: actions/setup-node@v5
+     with:
+      node-version: ${{ matrix.node }}
+      always-auth: true
+      cache: 'pnpm'
+   - name: 🚀 Install dependencies
+     run: pnpm install
+   - name: 🚀 Build packages
+     run: pnpm build
+   - name: 📦 Deploy to NPM registry
+     env:
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+     run: |
+      npm config set registry https://registry.npmjs.org
+      npm set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
+      if [ "${{ github.event.release.prerelease }}" = "false" ]; then
+        pnpm publish --filter "./packages/*" --access public --provenance --no-git-checks
+      else
+        pnpm publish --filter "./packages/*" --access public --provenance --no-git-checks --tag next
+      fi
+   - name: 📦 Deploy to GitHub package registry
+     env:
+      NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
+     run: |
+      npm config set registry https://npm.pkg.github.com
+      npm set //npm.pkg.github.com/:_authToken ${{ secrets.GH_TOKEN }}
+      if [ "${{ github.event.release.prerelease }}" = "false" ]; then
+        pnpm publish --filter "./packages/*" --access public --provenance --no-git-checks
+      else
+        pnpm publish --filter "./packages/*" --access public --provenance --no-git-checks --tag next
+      fi

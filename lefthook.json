@@ -1,0 +1,4 @@
+{
+ "$schema": "./node_modules/lefthook/schema.json",
+ "extends": ["./node_modules/@r4lrgx/shared-config/dist/lefthook-config/index.json"]
+}

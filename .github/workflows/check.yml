@@ -1,0 +1,39 @@
+name: Check
+
+on:
+ push:
+  branches: [main]
+ pull_request:
+  branches: [main]
+
+jobs:
+ check:
+  name: Biome check
+  runs-on: ubuntu-latest
+  strategy:
+   fail-fast: false
+   matrix:
+    node: ['lts/*']
+    biome: ['latest']
+  steps:
+   - name: 📥 Checkout code
+     uses: actions/checkout@v5
+   - name: 📦 Setup PNPM
+     uses: pnpm/action-setup@v4
+     with:
+      standalone: true
+   - name: 📦 Setup Node.js ${{ matrix.node }}
+     uses: actions/setup-node@v5
+     with:
+      node-version: ${{ matrix.node }}
+      cache: 'pnpm'
+   - name: 🚀 Install dependencies
+     run: pnpm install
+   - name: 🚀 Build packages
+     run: pnpm build
+   - name: 📦 Setup Biome.js ${{ matrix.biome }}
+     uses: biomejs/setup-biome@v2
+     with:
+      version: ${{ matrix.biome }}
+   - name: 🔥 Checker
+     run: 'biome check . --verbose --files-ignore-unknown=true'

@@ -1,0 +1,35 @@
+{
+ "$schema": "https://turbo.build/schema.json",
+ "ui": "tui",
+ "tasks": {
+  "build": {
+   "dependsOn": ["^build"],
+   "outputs": ["dist/**"],
+   "cache": false
+  },
+  "publish-pkg": {
+   "dependsOn": ["build"],
+   "cache": false
+  },
+  "publish-pkg:next": {
+   "dependsOn": ["build"],
+   "cache": false
+  },
+  "publish-pkg:test": {
+   "dependsOn": ["build"],
+   "cache": false
+  },
+  "format": {
+   "cache": false
+  },
+  "lint": {
+   "cache": false
+  },
+  "check": {
+   "cache": false
+  },
+  "check:fix": {
+   "cache": false
+  }
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "$schema": "https://biomejs.dev/schemas/latest/schema.json",
+ "extends": ["./base.json", "./typescript.json"],
+ "linter": {
+  "enabled": true,
+  "rules": {
+   "recommended": false,
+   "a11y": {},
+   "complexity": {},
+   "correctness": {
+    "noUnusedVariables": "error",
+    "noUnusedImports": "error"
+   },
+   "nursery": {},
+   "performance": {
+    "noAccumulatingSpread": "error",
+    "noDelete": "warn"
+   },
+   "security": {
+    "noGlobalEval": "error"
+   },
+   "style": {},
+   "suspicious": {
+    "noConsole": "warn",
+    "noShadowRestrictedNames": "error",
+    "noExtraNonNullAssertion": "warn"
+   }
+  }
+ }
+}

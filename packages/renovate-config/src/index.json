@@ -1,0 +1,55 @@
+{
+ "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+ "extends": ["config:base", ":disableDependencyDashboard", ":semanticCommits", ":automergeAll", ":automergePatch", ":automergeMinor", ":automergeBranch", ":maintainLockFilesWeekly"],
+ "automerge": true,
+ "platformAutomerge": true,
+ "automergeType": "branch",
+ "automergeStrategy": "squash",
+ "rebaseWhen": "auto",
+ "prHourlyLimit": 0,
+ "prConcurrentLimit": 0,
+ "prBodyTemplate": "{{{table}}}{{{notes}}}{{{changelogs}}}",
+ "labels": ["dependencies"],
+ "assignees": ["r4lrgx"],
+ "packageRules": [
+  {
+   "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies", "optionalDependencies"],
+   "automerge": true,
+   "platformAutomerge": true
+  },
+  {
+   "matchPackagePatterns": ["@udecode"],
+   "groupName": "@udecode/plate",
+   "automerge": true
+  },
+  {
+   "matchPackagePatterns": ["contentlayer"],
+   "groupName": "contentlayer",
+   "automerge": true
+  },
+  {
+   "matchPackageNames": ["@biomejs/biome", "lefthook", "typescript", "vitest", "jest"],
+   "groupName": "linters",
+   "automerge": true
+  },
+  {
+   "matchPackagePatterns": ["^react", "^@types/react"],
+   "groupName": "react",
+   "automerge": true
+  },
+  {
+   "matchPackagePatterns": ["^next"],
+   "groupName": "next",
+   "automerge": true
+  }
+ ],
+ "requireConfig": "ignored",
+ "enabledManagers": ["npm", "yarn", "pnpm"],
+ "schedule": ["at any time"],
+ "vulnerabilityAlerts": {
+  "enabled": true,
+  "labels": ["security"],
+  "automerge": true,
+  "assignees": ["r4lrgx"]
+ }
+}

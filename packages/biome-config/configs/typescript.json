@@ -1,0 +1,49 @@
+{
+ "$schema": "https://biomejs.dev/schemas/latest/schema.json",
+ "linter": {
+  "enabled": true,
+  "rules": {
+   "recommended": false,
+   "a11y": {},
+   "complexity": {
+    "noUselessThisAlias": "error",
+    "noUselessTypeConstraint": "error",
+    "useOptionalChain": "error",
+    "noStaticOnlyClass": "error"
+   },
+   "correctness": {
+    "noUnusedVariables": "error",
+    "noUnusedImports": "error",
+    "noConstructorReturn": "error"
+   },
+   "nursery": {},
+   "performance": {
+    "noAccumulatingSpread": "error",
+    "noDelete": "warn"
+   },
+   "security": {
+    "noGlobalEval": "error"
+   },
+   "style": {
+    "noNamespace": "error",
+    "useAsConstAssertion": "error",
+    "useImportType": "error",
+    "useExportType": "error",
+    "useConsistentArrayType": {
+     "level": "error",
+     "options": {
+      "syntax": "shorthand"
+     }
+    }
+   },
+   "suspicious": {
+    "noExplicitAny": "error",
+    "noExtraNonNullAssertion": "error",
+    "noMisleadingInstantiator": "error",
+    "noUnsafeDeclarationMerging": "error",
+    "useNamespaceKeyword": "error",
+    "noUnsafeNegation": "error"
+   }
+  }
+ }
+}

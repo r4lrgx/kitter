@@ -1,0 +1,41 @@
+{
+ "name": "@r4lrgx/renovate-config",
+ "version": "1.0.2",
+ "description": "🔩 My shared config for renovate.",
+ "type": "module",
+ "main": "src/index.json",
+ "scripts": {
+  "format": "biome format . --write --verbose --files-ignore-unknown=true",
+  "lint": "biome lint . --write --verbose --files-ignore-unknown=true",
+  "check": "biome check . --verbose --files-ignore-unknown=true",
+  "check:fix": "biome check . --fix --verbose --files-ignore-unknown=true"
+ },
+ "license": "MIT",
+ "author": {
+  "name": "r4lrgx",
+  "email": "tsx@r4lrgx.dev"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/r4lrgx/kitter.git"
+ },
+ "bugs": {
+  "url": "https://github.com/r4lrgx/kitter/issues"
+ },
+ "files": [
+  "src",
+  "README.md",
+  "LICENSE.md"
+ ],
+ "keywords": [
+  "renovate",
+  "config",
+  "configuration",
+  "configs",
+  "shared",
+  "r4lrgx",
+  "renovate-config",
+  "dependencies",
+  "updates"
+ ]
+}

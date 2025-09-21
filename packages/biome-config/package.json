@@ -1,0 +1,49 @@
+{
+ "name": "@r4lrgx/biome-config",
+ "version": "1.0.2",
+ "description": "🔩 My shared configuration for biomejs.",
+ "type": "module",
+ "exports": {
+  ".": {
+   "default": "./configs/base.json"
+  },
+  "./*": {
+   "default": "./configs/*.json"
+  }
+ },
+ "scripts": {
+  "publish-pkg": "pnpm publish --access public --no-git-checks --provenance",
+  "publish-pkg:next": "pnpm publish --access public --no-git-checks --provenance --tag next",
+  "publish-pkg:test": "pnpm publish --access public --no-git-checks --provenance --dry-run",
+  "format": "biome format . --write --verbose --files-ignore-unknown=true",
+  "lint": "biome lint . --write --verbose --files-ignore-unknown=true",
+  "check": "biome check . --verbose --files-ignore-unknown=true",
+  "check:fix": "biome check . --fix --verbose --files-ignore-unknown=true"
+ },
+ "license": "MIT",
+ "author": {
+  "name": "r4lrgx",
+  "email": "tsx@r4lrgx.dev"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/r4lrgx/kitter.git"
+ },
+ "bugs": {
+  "url": "https://github.com/r4lrgx/kitter/issues"
+ },
+ "files": [
+  "dist",
+  "README.md",
+  "LICENSE.md"
+ ],
+ "keywords": [
+  "biome",
+  "configuration",
+  "configs",
+  "shared",
+  "r4lrgx",
+  "linting",
+  "formatting"
+ ]
+}

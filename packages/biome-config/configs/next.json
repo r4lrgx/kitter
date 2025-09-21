@@ -1,0 +1,29 @@
+{
+ "$schema": "https://biomejs.dev/schemas/latest/schema.json",
+ "extends": ["./base.json", "./typescript.json", "./react.json"],
+ "linter": {
+  "enabled": true,
+  "rules": {
+   "recommended": false,
+   "a11y": {
+    "useAltText": "error",
+    "useValidAnchor": "error"
+   },
+   "complexity": {},
+   "correctness": {
+    "useExhaustiveDependencies": "error",
+    "useHookAtTopLevel": "error"
+   },
+   "nursery": {},
+   "performance": {},
+   "security": {
+    "noDangerouslySetInnerHtml": "error"
+   },
+   "style": {
+    "useImportType": "error",
+    "useExportType": "error"
+   },
+   "suspicious": {}
+  }
+ }
+}

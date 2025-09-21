@@ -1,0 +1,55 @@
+{
+ "name": "@r4lrgx/kitter",
+ "version": "1.0.0",
+ "description": "🧱 Config kit using Linters, Semantic release, Lefthook, and a collection of helpful Utilities to simplify your code.",
+ "funding": "https://github.com/sponsors/r4lrgx",
+ "homepage": "https://github.com/r4lrgx/kitter#readme",
+ "type": "module",
+ "scripts": {
+  "build": "turbo run build",
+  "publish-pkg": "turbo run publish-pkg",
+  "publish-pkg:next": "turbo run publish-pkg:next",
+  "publish-pkg:test": "turbo run publish-pkg:test",
+  "format": "turbo run format",
+  "lint": "turbo run lint",
+  "check": "turbo run check",
+  "check:fix": "turbo run check:fix",
+  "_format": "biome format . --write --verbose --files-ignore-unknown=true",
+  "_lint": "biome lint . --write --verbose --files-ignore-unknown=true",
+  "_check": "biome check . --verbose --files-ignore-unknown=true",
+  "_check:fix": "biome check . --fix --verbose --files-ignore-unknown=true",
+  "_check:unsafe": "biome check . --fix --unsafe --verbose --files-ignore-unknown=true"
+ },
+ "license": "MIT",
+ "author": {
+  "name": "r4lrgx",
+  "email": "tsx@r4lrgx.dev"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/r4lrgx/kitter.git"
+ },
+ "bugs": {
+  "url": "https://github.com/r4lrgx/kitter/issues"
+ },
+ "dependencies": {
+  "@r4lrgx/biome-config": "workspace:*",
+  "@r4lrgx/shared-config": "workspace:*",
+  "turbo": "^2.5.6"
+ },
+ "devDependencies": {
+  "@biomejs/biome": "^2.2.4",
+  "@commitlint/cli": "^19.8.1",
+  "@commitlint/types": "^19.8.1",
+  "@r4lrgx/gitmoji": "^1.0.3",
+  "@types/node": "^24.5.2",
+  "lefthook": "^1.13.1",
+  "semantic-release": "^24.2.9",
+  "tsx": "^4.20.5",
+  "typescript": "^5.9.2"
+ },
+ "engines": {
+  "node": ">=20.0.0"
+ },
+ "packageManager": "pnpm@10.17.0+sha512.fce8a3dd29a4ed2ec566fb53efbb04d8c44a0f05bc6f24a73046910fb9c3ce7afa35a0980500668fa3573345bd644644fa98338fa168235c80f4aa17aa17fbef"
+}

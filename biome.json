@@ -1,0 +1,18 @@
+{
+ "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+ "extends": ["@r4lrgx/biome-config/base", "@r4lrgx/biome-config/formatter", "@r4lrgx/biome-config/node", "@r4lrgx/biome-config/typescript"],
+ "linter": {
+  "rules": {
+   "complexity": {
+    "noVoid": "off"
+   },
+   "style": {
+    "useBlockStatements": "off",
+    "useNamingConvention": "off"
+   }
+  }
+ },
+ "files": {
+  "includes": ["**", "!**/dist/**", "!**/node_modules/**", "!**/.turbo/**"]
+ }
+}

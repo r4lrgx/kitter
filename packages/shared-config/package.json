@@ -1,0 +1,108 @@
+{
+ "name": "@r4lrgx/shared-config",
+ "version": "1.0.2",
+ "description": "🔩 My customized Config of semantic release and commitlint and others.",
+ "type": "module",
+ "exports": {
+  ".": {
+   "import": "./dist/index.js",
+   "types": "./dist/index.d.ts"
+  },
+  "./changelog-config": {
+   "import": "./dist/changelog-config/index.js",
+   "types": "./dist/changelog-config/index.d.ts"
+  },
+  "./commitlint-config": {
+   "import": "./dist/commitlint-config/index.js",
+   "types": "./dist/commitlint-config/index.d.ts"
+  },
+  "./lefthook-config": {
+   "default": "./dist/lefthook-config/index.json"
+  },
+  "./release-config": {
+   "import": "./dist/release-config/index.js",
+   "types": "./dist/release-config/index.d.ts"
+  }
+ },
+ "scripts": {
+  "clean": "rimraf dist",
+  "build": "pnpm run clean && tsup --config tsup.config.ts && cpy '**/*.json' ../dist --cwd=src",
+  "publish-pkg": "pnpm publish --access public --no-git-checks --provenance",
+  "publish-pkg:next": "pnpm publish --access public --no-git-checks --provenance --tag next",
+  "publish-pkg:test": "pnpm publish --access public --no-git-checks --provenance --dry-run",
+  "format": "biome format . --write --verbose --files-ignore-unknown=true",
+  "lint": "biome lint . --write --verbose --files-ignore-unknown=true",
+  "check": "biome check . --verbose --files-ignore-unknown=true",
+  "check:fix": "biome check . --fix --verbose --files-ignore-unknown=true"
+ },
+ "license": "MIT",
+ "author": {
+  "name": "r4lrgx",
+  "email": "tsx@r4lrgx.dev"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/r4lrgx/kitter.git"
+ },
+ "bugs": {
+  "url": "https://github.com/r4lrgx/kitter/issues"
+ },
+ "files": [
+  "dist",
+  "README.md",
+  "LICENSE.md"
+ ],
+ "keywords": [
+  "configuration",
+  "configs",
+  "shared",
+  "r4lrgx",
+  "semantic-release",
+  "commitlint",
+  "lefthook"
+ ],
+ "dependencies": {
+  "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
+  "@r4lrgx/gitmoji": "^1.0.3",
+  "@semantic-release/changelog": "^6.0.3",
+  "@semantic-release/commit-analyzer": "^13.0.1",
+  "@semantic-release/exec": "^7.1.0",
+  "@semantic-release/git": "^10.0.1",
+  "@semantic-release/github": "^11.0.6",
+  "@semantic-release/npm": "^12.0.2",
+  "@semantic-release/release-notes-generator": "^14.1.0",
+  "chalk": "^5.6.2",
+  "dedent": "^1.7.0",
+  "lodash.clonedeep": "^4.5.0",
+  "prettier-plugin-tailwindcss": "^0.6.14",
+  "semantic-release": "^24.2.9"
+ },
+ "devDependencies": {
+  "@commitlint/types": "^19.8.1",
+  "@types/lodash.clonedeep": "^4.5.9",
+  "@types/node": "22.15.30",
+  "cpy-cli": "^6.0.0",
+  "glob": "^11.0.3",
+  "rimraf": "6.0.1",
+  "tsup": "^8.5.0",
+  "typescript": "^5.9.2"
+ },
+ "peerDependencies": {
+  "@biomejs/biome": "2.2.4"
+ },
+ "publishConfig": {
+  "access": "public",
+  "provenance": true
+ },
+ "types": "./dist/index.d.ts",
+ "typesVersions": {
+  "*": {
+   "*": [
+    "./dist/index.d.ts"
+   ]
+  }
+ },
+ "engines": {
+  "node": ">=20.0.0"
+ }
+}

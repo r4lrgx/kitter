@@ -1,0 +1,30 @@
+{
+ "$schema": "https://json.schemastore.org/lefthook.json",
+ "pre-commit": {
+  "parallel": true,
+  "commands": {
+   "format": {
+    "run": "pnpm exec biome format . --write --verbose --files-ignore-unknown=true",
+    "stage_fixed": false,
+    "tags": "format",
+    "fail_text": "Format error: Could not format files"
+   },
+   "lint": {
+    "run": "pnpm exec biome lint . --write --verbose --files-ignore-unknown=true",
+    "stage_fixed": false,
+    "tags": "lint",
+    "fail_text": "Lint error: Troubleshoot before committing"
+   }
+  }
+ },
+ "commit-msg": {
+  "commands": {
+   "commitlint": {
+    "run": "pnpm exec commitlint --edit {1}",
+    "skip": ["merge", "rebase"],
+    "tags": "commitlint",
+    "fail_text": "Commitlint error: Use the conventional format: \":sparkles: type(scope): description\"."
+   }
+  }
+ }
+}

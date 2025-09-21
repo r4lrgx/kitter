@@ -1,0 +1,65 @@
+{
+ "$schema": "https://biomejs.dev/schemas/latest/schema.json",
+ "extends": ["./base.json", "./typescript.json"],
+ "linter": {
+  "enabled": true,
+  "rules": {
+   "recommended": false,
+   "a11y": {
+    "useAltText": "warn",
+    "useValidAnchor": "warn",
+    "noAutofocus": "error",
+    "useButtonType": "error",
+    "noPositiveTabindex": "error",
+    "useValidAriaProps": "warn",
+    "useValidAriaValues": "warn",
+    "noAriaUnsupportedElements": "warn",
+    "useAriaPropsForRole": "warn"
+   },
+   "complexity": {},
+   "correctness": {
+    "useExhaustiveDependencies": "error",
+    "useHookAtTopLevel": "error",
+    "useJsxKeyInIterable": "error",
+    "noChildrenProp": "error"
+   },
+   "nursery": "error",
+   "performance": {
+    "noDelete": "warn"
+   },
+   "security": {
+    "noDangerouslySetInnerHtmlWithChildren": "error"
+   },
+   "style": {
+    "useFragmentSyntax": "error",
+    "useConsistentArrayType": {
+     "level": "error",
+     "options": {
+      "syntax": "shorthand"
+     }
+    },
+    "useNamingConvention": {
+     "level": "error",
+     "options": {
+      "strictCase": true,
+      "requireAscii": true,
+      "conventions": [
+       {
+        "selector": {
+         "scope": "any",
+         "kind": "variable"
+        },
+        "formats": ["PascalCase"],
+        "match": "^[A-Z]"
+       }
+      ]
+     }
+    }
+   },
+   "suspicious": {
+    "noCommentText": "error",
+    "noDuplicateJsxProps": "error"
+   }
+  }
+ }
+}
