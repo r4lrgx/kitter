@@ -1,6 +1,6 @@
 {
  "name": "@r4lrgx/biome-config",
- "version": "1.0.3",
+ "version": "1.0.4",
  "description": "🔩 My shared configuration for biomejs.",
  "type": "module",
  "exports": {

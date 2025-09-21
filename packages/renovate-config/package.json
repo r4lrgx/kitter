@@ -1,6 +1,6 @@
 {
  "name": "@r4lrgx/renovate-config",
- "version": "1.0.3",
+ "version": "1.0.4",
  "description": "🔩 My shared config for renovate.",
  "type": "module",
  "main": "src/index.json",

@@ -1,6 +1,6 @@
 {
  "name": "@r4lrgx/shared-config",
- "version": "1.0.3",
+ "version": "1.0.4",
  "description": "🔩 My customized Config of semantic release and commitlint and others.",
  "type": "module",
  "exports": {
