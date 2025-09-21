@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.0.5`](https://github.com/r4lrgx/kitter/compare/v1.0.4...v1.0.5)
+🗓️ **Released:** `2025-09-21`
+
+#### 📝 Documentation
+
+Improve the documentation for README.md and README.md in renovate-config.
+
+
+<br/>
+
+[<img width="32" height="32" title="r4lrgx" src="https://avatars.githubusercontent.com/u/153697070?v=4" />](https://github.com/r4lrgx)
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Docs updates and improvements
+
+* Improve the documentation for README.md and README.md in renovate-config ([9fd54b2](https://github.com/r4lrgx/kitter/commit/9fd54b2)) - by: [<img width="16" height="16" src="https://avatars.githubusercontent.com/u/153697070?v=4" /> **r4lrgx**](https://github.com/r4lrgx)
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.0.4`](https://github.com/r4lrgx/kitter/compare/v1.0.3...v1.0.4)
 🗓️ **Released:** `2025-09-21`
 
