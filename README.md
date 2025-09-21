@@ -9,9 +9,9 @@ A curated collection of shared tools and configs to keep all my projects clean, 
 <!-- prettier-ignore-start -->
 | 📦 **Package** | 🔢 **Version** | 📈 **Weekly Downloads** | 📚 **View Docs** |
 | - | - | - | - |
-| [`@r4lrgx/biome-config`](https://www.npmjs.com/package/@r4lrgx/biome-config) | ![](https://img.shields.io/npm/v/@r4lrgx/biome-config/latest.svg) | [![](https://img.shields.io/npm/dw/@r4lrgx/biome-config)](https://www.npmjs.com/package/@r4lrgx/biome-config) | [View Config Docs](/packages/biome-config/README.md) |
-| [`@r4lrgx/shared-config`](https://www.npmjs.com/package/@r4lrgx/shared-config) | ![](https://img.shields.io/npm/v/@r4lrgx/shared-config/latest.svg) | [![](https://img.shields.io/npm/dw/@r4lrgx/shared-config)](https://www.npmjs.com/package/@r4lrgx/shared-config) | [View Gitmoji Docs](/packages/shared-config/README.md) |
-| [`@r4lrgx/renovate-config`](/packages/renovate-config) | ![](https://img.shields.io/github/package-json/v/r4lrgx/kitter?filename=packages%2Frenovate-config%2Fpackage.json&label=github%40latest) | - | [View Utils Docs](/packages/renovate-config/README.md) |
+| [`@r4lrgx/biome-config`](https://www.npmjs.com/package/@r4lrgx/biome-config) | ![](https://img.shields.io/npm/v/@r4lrgx/biome-config/latest.svg) | [![](https://img.shields.io/npm/dw/@r4lrgx/biome-config)](https://www.npmjs.com/package/@r4lrgx/biome-config) | [Docs](/packages/biome-config/README.md) |
+| [`@r4lrgx/shared-config`](https://www.npmjs.com/package/@r4lrgx/shared-config) | ![](https://img.shields.io/npm/v/@r4lrgx/shared-config/latest.svg) | [![](https://img.shields.io/npm/dw/@r4lrgx/shared-config)](https://www.npmjs.com/package/@r4lrgx/shared-config) | [Docs](/packages/shared-config/README.md) |
+| [`@r4lrgx/renovate-config`](/packages/renovate-config) | ![](https://img.shields.io/github/package-json/v/r4lrgx/kitter?filename=packages%2Frenovate-config%2Fpackage.json&label=github%40latest) | - | [Docs](/packages/renovate-config/README.md) |
 <!-- prettier-ignore-end -->
 
 <details>
