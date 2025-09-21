@@ -1,4 +1,4 @@
-![Renovate config](https://github.com/user-attachments/assets/63163cc0-61c7-4fb6-8292-3b82db30dfc7)
+![Renovate config](https://github.com/user-attachments/assets/84c79f1c-d70a-4a8d-b169-49ed1eebe370)
 
 ---
 

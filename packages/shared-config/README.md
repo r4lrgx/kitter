@@ -1,4 +1,4 @@
-![Shared config](https://github.com/user-attachments/assets/050ebff7-e020-4d45-a6c4-057e6d58ff2f)
+![Shared config](https://github.com/user-attachments/assets/915bb732-d5a4-4ded-abd4-3738a380bb57)
 
 <div align="center">
   <a aria-label="Written with" href="https://www.typescriptlang.org/">

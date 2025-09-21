@@ -1,4 +1,4 @@
-![kitter config](https://github.com/user-attachments/assets/cba500e0-a707-475d-8cdf-b7134ca4a0bc)
+![kitter config](https://github.com/user-attachments/assets/4949a15a-1e62-4a50-8d95-7d0ec0756fe6)
 
 ---
 

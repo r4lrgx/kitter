@@ -1,4 +1,4 @@
-![Biome config](https://github.com/user-attachments/assets/da2af72e-4d8f-4159-a8b4-674e133cdf0c)
+![Biome config](https://github.com/user-attachments/assets/dc59d471-d5a2-440e-9372-dc5bbd5e43e2)
 
 <div align="center">
   <a aria-label="Formatted with Biome" href="https://biomejs.dev/">
