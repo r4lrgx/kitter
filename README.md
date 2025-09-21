@@ -1,17 +1,29 @@
 ![kitter config](https://github.com/user-attachments/assets/4949a15a-1e62-4a50-8d95-7d0ec0756fe6)
 
+<div align="center">
+  <a aria-label="Managed with Turbo" href="https://turborepo.com/">
+    <img src="https://img.shields.io/static/v1?color=red&logo=turborepo&label=Managed%20with&message=Turbo"/>
+  </a>
+   <a aria-label="Version" href="https://github.com/r4lrgx/kitter/releases">
+    <img src="https://img.shields.io/github/v/release/r4lrgx/kitter?color=&logo=github&label=Latest">
+  </a>
+  <a aria-label="License" href="https://github.com/r4lrgx/kitter/blob/main/LICENSE.md">
+    <img src="https://img.shields.io/github/license/r4lrgx/kitter?color=&logo=github&label=License">
+  </a>
+</div>
+
 ---
 
-## 🧱 Available Packages
+## 📦 Available Packages
 
 A curated collection of shared tools and configs to keep all my projects clean, consistent, and maintainable.
 
 <!-- prettier-ignore-start -->
-| 📦 **Package** | 🔢 **Version** | 📈 **Weekly Downloads** | 📚 **View Docs** |
+| 📦 **Package** | 🔢 **Version** | 📈 **Weekly Downloads** | 📄 **View Docs** |
 | - | - | - | - |
-| [`@r4lrgx/biome-config`](https://www.npmjs.com/package/@r4lrgx/biome-config) | ![](https://img.shields.io/npm/v/@r4lrgx/biome-config/latest.svg) | [![](https://img.shields.io/npm/dw/@r4lrgx/biome-config)](https://www.npmjs.com/package/@r4lrgx/biome-config) | [Docs](/packages/biome-config/README.md) |
-| [`@r4lrgx/shared-config`](https://www.npmjs.com/package/@r4lrgx/shared-config) | ![](https://img.shields.io/npm/v/@r4lrgx/shared-config/latest.svg) | [![](https://img.shields.io/npm/dw/@r4lrgx/shared-config)](https://www.npmjs.com/package/@r4lrgx/shared-config) | [Docs](/packages/shared-config/README.md) |
-| [`@r4lrgx/renovate-config`](/packages/renovate-config) | ![](https://img.shields.io/github/package-json/v/r4lrgx/kitter?filename=packages%2Frenovate-config%2Fpackage.json&label=github%40latest) | - | [Docs](/packages/renovate-config/README.md) |
+| [`@r4lrgx/biome-config`](https://www.npmjs.com/package/@r4lrgx/biome-config) | ![](https://img.shields.io/npm/v/@r4lrgx/biome-config/latest.svg?color=blue&logo=npm) | [![](https://img.shields.io/npm/dw/@r4lrgx/biome-config?color=&logo=npm&label=Downloads)](https://www.npmjs.com/package/@r4lrgx/biome-config) | [Docs](/packages/biome-config/README.md) |
+| [`@r4lrgx/shared-config`](https://www.npmjs.com/package/@r4lrgx/shared-config) | ![](https://img.shields.io/npm/v/@r4lrgx/shared-config/latest.svg?color=blue&logo=npm) | [![](https://img.shields.io/npm/dw/@r4lrgx/shared-config?color=&logo=npm&label=Downloads)](https://www.npmjs.com/package/@r4lrgx/shared-config) | [Docs](/packages/shared-config/README.md) |
+| [`@r4lrgx/renovate-config`](https://www.npmjs.com/package/@r4lrgx/renovate-config) | ![](https://img.shields.io/npm/v/@r4lrgx/renovate-config/latest.svg?color=blue&logo=npm) | [![](https://img.shields.io/npm/dw/@r4lrgx/renovate-config?color=&logo=npm&label=Downloads)](https://www.npmjs.com/package/@r4lrgx/renovate-config) | [Docs](/packages/renovate-config/README.md) |
 <!-- prettier-ignore-end -->
 
 <details>

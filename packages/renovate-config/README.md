@@ -2,23 +2,19 @@
 
 ---
 
-### 🛠 How to use?
-
 > [!NOTE]
 > This is a quick guide on how to set up and use Renovate with the recommended configuration.
 
-1. First, create a Renovate configuration file. See the official docs for all available options: [Renovate Configuration Options](https://docs.renovatebot.com/configuration-options/).
-2. For simplicity and consistency, it’s best to use **`renovate.json`** or **`.renovaterc.json`** inside your repo.
+### 🛠 How to use?
+
+Create a file named `renovate.json` wherever you want and paste the content below into it.
 
 ```json
-// .github/renovate.json or .github/.renovaterc.json
 {
  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
  "extends": ["github>r4lrgx/kitter//packages/renovate-config/src/index.json"]
 }
 ```
-
-This setup tells Renovate to extend the shared configuration provided by this repo.
 
 ## 📋 License
 
