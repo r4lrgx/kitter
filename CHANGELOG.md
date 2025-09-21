@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.0.2`](https://github.com/r4lrgx/kitter/compare/v1.0.1...v1.0.2)
+🗓️ **Released:** `2025-09-21`
+
+#### 🔧 Chores
+
+bump versions to 1.0.3.
+
+
+<br/>
+
+[<img width="32" height="32" title="r4lrgx" src="https://avatars.githubusercontent.com/u/153697070?v=4" />](https://github.com/r4lrgx)
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Other tasks and maintenance
+
+* Bump versions to 1.0.3 ([bb7aec7](https://github.com/r4lrgx/kitter/commit/bb7aec7)) - by: [<img width="16" height="16" src="https://avatars.githubusercontent.com/u/153697070?v=4" /> **r4lrgx**](https://github.com/r4lrgx)
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.0.1`](https://github.com/r4lrgx/kitter/compare/v1.0.0...v1.0.1)
 🗓️ **Released:** `2025-09-21`
 
