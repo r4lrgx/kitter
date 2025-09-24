@@ -1,6 +1,6 @@
 {
  "name": "@r4lrgx/biome-config",
- "version": "1.0.4",
+ "version": "1.0.5",
  "description": "🔩 My shared configuration for biomejs.",
  "type": "module",
  "exports": {
@@ -33,7 +33,7 @@
   "url": "https://github.com/r4lrgx/kitter/issues"
  },
  "files": [
-  "dist",
+  "configs",
   "README.md",
   "LICENSE.md"
  ],
