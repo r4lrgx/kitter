@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.0.6`](https://github.com/r4lrgx/kitter/compare/v1.0.5...v1.0.6)
+🗓️ **Released:** `2025-09-24`
+
+#### 🐛 Bug Fixes
+
+update package versions to 1.0.5 for biome-config, renovate-config, and shared-config.
+
+
+<br/>
+
+[<img width="32" height="32" title="r4lrgx" src="https://avatars.githubusercontent.com/u/153697070?v=4" />](https://github.com/r4lrgx)
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Resolved bugs and issues
+
+* Update package versions to 1.0.5 for biome-config, renovate-config, and shared-config ([697e140](https://github.com/r4lrgx/kitter/commit/697e140)) - by: [<img width="16" height="16" src="https://avatars.githubusercontent.com/u/153697070?v=4" /> **r4lrgx**](https://github.com/r4lrgx)
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.0.5`](https://github.com/r4lrgx/kitter/compare/v1.0.4...v1.0.5)
 🗓️ **Released:** `2025-09-21`
 
