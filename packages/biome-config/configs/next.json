@@ -1,29 +1,43 @@
 {
  "$schema": "https://biomejs.dev/schemas/latest/schema.json",
  "extends": ["./base.json", "./typescript.json", "./react.json"],
- "linter": {
-  "enabled": true,
-  "rules": {
-   "recommended": false,
-   "a11y": {
-    "useAltText": "error",
-    "useValidAnchor": "error"
-   },
-   "complexity": {},
-   "correctness": {
-    "useExhaustiveDependencies": "error",
-    "useHookAtTopLevel": "error"
-   },
-   "nursery": {},
-   "performance": {},
-   "security": {
-    "noDangerouslySetInnerHtml": "error"
-   },
-   "style": {
-    "useImportType": "error",
-    "useExportType": "error"
-   },
-   "suspicious": {}
+ "overrides": [
+  {
+   "includes": ["**/*.jsx", "**/*.tsx"],
+   "linter": {
+    "enabled": true,
+    "rules": {
+     "recommended": false,
+     "a11y": {
+      "useAnchorContent": "error",
+      "useHtmlLang": "error",
+      "useIframeTitle": "error",
+      "useKeyWithClickEvents": "warn",
+      "useKeyWithMouseEvents": "warn"
+     },
+     "complexity": {
+      "noUselessFragments": "error",
+      "useOptionalChain": "error"
+     },
+     "correctness": {
+      "noUnusedVariables": "error"
+     },
+     "nursery": {},
+     "performance": {
+      "noAccumulatingSpread": "error",
+      "noDelete": "warn"
+     },
+     "security": {
+      "noDangerouslySetInnerHtml": "warn",
+      "noGlobalEval": "error"
+     },
+     "style": {
+      "noNamespace": "error",
+      "useSelfClosingElements": "error"
+     },
+     "suspicious": {}
+    }
+   }
   }
- }
+ ]
 }

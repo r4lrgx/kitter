@@ -6,24 +6,29 @@
   "rules": {
    "recommended": false,
    "a11y": {},
-   "complexity": {},
+   "complexity": {
+    "useLiteralKeys": "error"
+   },
    "correctness": {
-    "noUnusedVariables": "error",
-    "noUnusedImports": "error"
+    "noUnusedImports": "error",
+    "noGlobalObjectCalls": "error"
    },
    "nursery": {},
    "performance": {
     "noAccumulatingSpread": "error",
-    "noDelete": "warn"
+    "noDelete": "warn",
+    "noReExportAll": "error"
    },
    "security": {
     "noGlobalEval": "error"
    },
-   "style": {},
+   "style": {
+    "useConst": "error"
+   },
    "suspicious": {
     "noConsole": "warn",
-    "noShadowRestrictedNames": "error",
-    "noExtraNonNullAssertion": "warn"
+    "noDebugger": "error",
+    "noGlobalAssign": "error"
    }
   }
  }

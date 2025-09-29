@@ -1,65 +1,118 @@
 {
  "$schema": "https://biomejs.dev/schemas/latest/schema.json",
  "extends": ["./base.json", "./typescript.json"],
- "linter": {
-  "enabled": true,
-  "rules": {
-   "recommended": false,
-   "a11y": {
-    "useAltText": "warn",
-    "useValidAnchor": "warn",
-    "noAutofocus": "error",
-    "useButtonType": "error",
-    "noPositiveTabindex": "error",
-    "useValidAriaProps": "warn",
-    "useValidAriaValues": "warn",
-    "noAriaUnsupportedElements": "warn",
-    "useAriaPropsForRole": "warn"
-   },
-   "complexity": {},
-   "correctness": {
-    "useExhaustiveDependencies": "error",
-    "useHookAtTopLevel": "error",
-    "useJsxKeyInIterable": "error",
-    "noChildrenProp": "error"
-   },
-   "nursery": "error",
-   "performance": {
-    "noDelete": "warn"
-   },
-   "security": {
-    "noDangerouslySetInnerHtmlWithChildren": "error"
-   },
-   "style": {
-    "useFragmentSyntax": "error",
-    "useConsistentArrayType": {
-     "level": "error",
-     "options": {
-      "syntax": "shorthand"
-     }
-    },
-    "useNamingConvention": {
-     "level": "error",
-     "options": {
-      "strictCase": true,
-      "requireAscii": true,
-      "conventions": [
-       {
-        "selector": {
-         "scope": "any",
-         "kind": "variable"
-        },
-        "formats": ["PascalCase"],
-        "match": "^[A-Z]"
+ "overrides": [
+  {
+   "includes": ["**/*.jsx", "**/*.tsx"],
+   "linter": {
+    "enabled": true,
+    "rules": {
+     "recommended": false,
+     "a11y": {
+      "useAltText": "warn",
+      "useValidAnchor": "warn",
+      "noAutofocus": "error",
+      "useButtonType": "error",
+      "noPositiveTabindex": "error",
+      "useValidAriaProps": "warn",
+      "useValidAriaValues": "warn",
+      "noAriaUnsupportedElements": "warn",
+      "useAriaPropsForRole": "warn"
+     },
+     "complexity": {},
+     "correctness": {
+      "useExhaustiveDependencies": "error",
+      "useHookAtTopLevel": "error",
+      "useJsxKeyInIterable": "error",
+      "noChildrenProp": "error"
+     },
+     "nursery": {},
+     "performance": {
+      "noDelete": "warn"
+     },
+     "security": {
+      "noDangerouslySetInnerHtmlWithChildren": "error"
+     },
+     "style": {
+      "useFragmentSyntax": "error",
+      "useConsistentArrayType": {
+       "level": "error",
+       "options": {
+        "syntax": "shorthand"
        }
-      ]
+      },
+      "useNamingConvention": {
+       "level": "error",
+       "options": {
+        "strictCase": false,
+        "requireAscii": true,
+        "conventions": [
+         {
+          "formats": ["PascalCase"],
+          "selector": {
+           "kind": "function",
+           "scope": "any"
+          }
+         },
+         {
+          "formats": ["camelCase"],
+          "selector": {
+           "kind": "functionParameter",
+           "scope": "any"
+          }
+         },
+         {
+          "formats": ["PascalCase"],
+          "selector": {
+           "kind": "class",
+           "scope": "any"
+          }
+         },
+         {
+          "formats": ["PascalCase"],
+          "selector": {
+           "kind": "interface",
+           "scope": "any"
+          }
+         },
+         {
+          "formats": ["PascalCase"],
+          "selector": {
+           "kind": "typeAlias",
+           "scope": "any"
+          }
+         },
+         {
+          "formats": ["camelCase"],
+          "selector": {
+           "kind": "typeParameter",
+           "scope": "any"
+          }
+         },
+         {
+          "formats": ["PascalCase"],
+          "selector": {
+           "kind": "enum",
+           "scope": "any"
+          }
+         },
+         {
+          "formats": ["CONSTANT_CASE"],
+          "selector": {
+           "kind": "enumMember",
+           "scope": "any"
+          }
+         }
+        ]
+       }
+      }
+     },
+     "suspicious": {
+      "noCommentText": "error",
+      "noDuplicateJsxProps": "error"
      }
     }
-   },
-   "suspicious": {
-    "noCommentText": "error",
-    "noDuplicateJsxProps": "error"
    }
   }
- }
+ ]
 }

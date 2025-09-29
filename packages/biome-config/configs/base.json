@@ -6,7 +6,6 @@
    "recommended": false,
    "a11y": {},
    "complexity": {
-    "noBannedTypes": "error",
     "noExtraBooleanCast": "error",
     "noStaticOnlyClass": "error",
     "noUselessCatch": "error",
@@ -15,7 +14,6 @@
     "noUselessRename": "error",
     "noUselessTernary": "error",
     "noUselessThisAlias": "error",
-    "noUselessTypeConstraint": "error",
     "noUselessUndefinedInitialization": "error",
     "noVoid": "error",
     "useLiteralKeys": "error",
@@ -30,7 +28,6 @@
     "noEmptyPattern": "error",
     "noGlobalObjectCalls": "error",
     "noInvalidConstructorSuper": "error",
-    "noInvalidUseBeforeDeclaration": "error",
     "noPrecisionLoss": "error",
     "noSelfAssign": "error",
     "noSwitchDeclarations": "error",
@@ -39,8 +36,6 @@
     "noUnreachableSuper": "error",
     "noUnsafeFinally": "error",
     "noUnusedVariables": "error",
-    "useExhaustiveDependencies": "warn",
-    "useHookAtTopLevel": "error",
     "useIsNan": "error",
     "useJsxKeyInIterable": "error"
    },
@@ -53,27 +48,47 @@
    "style": {
     "noImplicitBoolean": "error",
     "noNamespace": "error",
-    "noNonNullAssertion": "error",
     "useBlockStatements": "error",
+    "useConsistentBuiltinInstantiation": "error",
+    "useConst": "error",
+    "useFragmentSyntax": "error",
+    "useSingleVarDeclarator": "error",
+    "useNamingConvention": {
+     "level": "error",
+     "options": {
+      "strictCase": false,
+      "requireAscii": true,
+      "conventions": [
+       {
+        "formats": ["camelCase"],
+        "selector": {
+         "kind": "function",
+         "scope": "any"
+        }
+       },
+       {
+        "formats": ["camelCase"],
+        "selector": {
+         "kind": "functionParameter",
+         "scope": "any"
+        }
+       },
+       {
+        "formats": ["PascalCase"],
+        "selector": {
+         "kind": "class",
+         "scope": "any"
+        }
+       }
+      ]
+     }
+    },
     "useConsistentArrayType": {
      "level": "error",
      "options": {
       "syntax": "shorthand"
      }
-    },
-    "useConsistentBuiltinInstantiation": "error",
-    "useConst": "error",
-    "useExportType": "error",
-    "useFragmentSyntax": "error",
-    "useImportType": "error",
-    "useNamingConvention": {
-     "level": "error",
-     "options": {
-      "strictCase": false
-     }
-    },
-    "useShorthandFunctionType": "error",
-    "useSingleVarDeclarator": "error"
+    }
    },
    "suspicious": {
     "noAssignInExpressions": "error",
@@ -83,7 +98,6 @@
     "noCommentText": "error",
     "noCompareNegZero": "error",
     "noConfusingLabels": "error",
-    "noConfusingVoidType": "error",
     "noControlCharactersInRegex": "error",
     "noDebugger": "error",
     "noDoubleEquals": "error",
@@ -93,14 +107,12 @@
     "noDuplicateObjectKeys": "error",
     "noDuplicateParameters": "error",
     "noEmptyBlockStatements": "error",
-    "noEmptyInterface": "error",
     "noExtraNonNullAssertion": "error",
     "noFallthroughSwitchClause": "error",
     "noFunctionAssign": "error",
     "noGlobalAssign": "error",
     "noImportAssign": "error",
     "noMisleadingCharacterClass": "error",
-    "noMisleadingInstantiator": "error",
     "noPrototypeBuiltins": "error",
     "noRedeclare": "error",
     "noSelfCompare": "error",
