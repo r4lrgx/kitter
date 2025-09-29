@@ -21,6 +21,35 @@
 
 ---
 
+## [Version&nbsp;`1.1.0`](https://github.com/r4lrgx/kitter/compare/v1.0.6...v1.1.0)
+🗓️ **Released:** `2025-09-29`
+
+#### ✨ Features
+
+improves all settings and provides a better filter for React.
+
+
+<br/>
+
+[<img width="32" height="32" title="r4lrgx" src="https://avatars.githubusercontent.com/u/153697070?v=4" />](https://github.com/r4lrgx)
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### New features and enhancements
+
+* Improves all settings and provides a better filter for React ([53d7775](https://github.com/r4lrgx/kitter/commit/53d7775)) - by: [<img width="16" height="16" src="https://avatars.githubusercontent.com/u/153697070?v=4" /> **r4lrgx**](https://github.com/r4lrgx)
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.0.6`](https://github.com/r4lrgx/kitter/compare/v1.0.5...v1.0.6)
 🗓️ **Released:** `2025-09-24`
 

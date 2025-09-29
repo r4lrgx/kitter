@@ -1,6 +1,6 @@
 {
  "name": "@r4lrgx/kitter",
- "version": "1.0.6",
+ "version": "1.1.0",
  "description": "🧱 Config kit using Linters, Semantic release, Lefthook, and a collection of helpful Utilities to simplify your code.",
  "funding": "https://github.com/sponsors/r4lrgx",
  "homepage": "https://github.com/r4lrgx/kitter#readme",
