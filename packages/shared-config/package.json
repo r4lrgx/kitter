@@ -88,7 +88,7 @@
   "typescript": "^5.9.2"
  },
  "peerDependencies": {
-  "@biomejs/biome": "2.2.4"
+  "@biomejs/biome": "2.2.5"
  },
  "publishConfig": {
   "access": "public",
