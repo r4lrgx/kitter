@@ -105,8 +105,8 @@ importers:
         specifier: ^4.5.9
         version: 4.5.9
       '@types/node':
-        specifier: 24.9.0
-        version: 24.9.0
+        specifier: 24.9.1
+        version: 24.9.1
       cpy-cli:
         specifier: ^6.0.0
         version: 6.0.0
@@ -773,8 +773,8 @@ packages:
   '@types/node@24.8.1':
     resolution: {integrity: sha512-alv65KGRadQVfVcG69MuB4IzdYVpRwMG/mq8KWOaoOdyY617P5ivaDiMCGOFDWD2sAn5Q0mR3mRtUOgm99hL9Q==}
 
-  '@types/node@24.9.0':
-    resolution: {integrity: sha512-MKNwXh3seSK8WurXF7erHPJ2AONmMwkI7zAMrXZDPIru8jRqkk6rGDBVbw4mLwfqA+ZZliiDPg05JQ3uW66tKQ==}
+  '@types/node@24.9.1':
+    resolution: {integrity: sha512-QoiaXANRkSXK6p0Duvt56W208du4P9Uye9hWLWgGMDTEoKPhuenzNcC4vGUmrNkiOKTlIrBoyNQYNpSwfEZXSg==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -3130,7 +3130,7 @@ snapshots:
 
   '@types/conventional-commits-parser@5.0.1':
     dependencies:
-      '@types/node': 24.9.0
+      '@types/node': 24.9.1
 
   '@types/estree@1.0.8': {}
 
@@ -3144,7 +3144,7 @@ snapshots:
     dependencies:
       undici-types: 7.14.0
 
-  '@types/node@24.9.0':
+  '@types/node@24.9.1':
     dependencies:
       undici-types: 7.16.0
 
